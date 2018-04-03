@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressVPN", "ExpressVPN\ExpressVPN.csproj", "{26ECCA46-ED90-4AD5-A910-A082D20FEC5C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressVPN.Web", "ExpressVPN.Web\ExpressVPN.Web.csproj", "{57C920B4-B0ED-4E2B-ADC0-826D57EBFA03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressVPN.DataImport", "ExpressVPN.DataImport\ExpressVPN.DataImport.csproj", "{CDAB6352-C887-4B22-B323-E963E3A06A56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressVPN.Model", "ExpressVPN.Model\ExpressVPN.Model.csproj", "{400F7FDD-4E6F-4E8F-A293-ECDDC7409D9A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{26ECCA46-ED90-4AD5-A910-A082D20FEC5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{26ECCA46-ED90-4AD5-A910-A082D20FEC5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{26ECCA46-ED90-4AD5-A910-A082D20FEC5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{26ECCA46-ED90-4AD5-A910-A082D20FEC5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57C920B4-B0ED-4E2B-ADC0-826D57EBFA03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57C920B4-B0ED-4E2B-ADC0-826D57EBFA03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57C920B4-B0ED-4E2B-ADC0-826D57EBFA03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57C920B4-B0ED-4E2B-ADC0-826D57EBFA03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDAB6352-C887-4B22-B323-E963E3A06A56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDAB6352-C887-4B22-B323-E963E3A06A56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDAB6352-C887-4B22-B323-E963E3A06A56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDAB6352-C887-4B22-B323-E963E3A06A56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{400F7FDD-4E6F-4E8F-A293-ECDDC7409D9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{400F7FDD-4E6F-4E8F-A293-ECDDC7409D9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{400F7FDD-4E6F-4E8F-A293-ECDDC7409D9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{400F7FDD-4E6F-4E8F-A293-ECDDC7409D9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

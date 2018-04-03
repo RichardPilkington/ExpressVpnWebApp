@@ -1,0 +1,66 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model IndexViewModel
+<link href="~/css/ExpressVpn.css" rel="stylesheet" />
+<a asp-controller="home" asp-action="change" asp-route-region="" class="btn btn-default">Disconnect region</a>
+
+<h4> Top results </h4>
+<div class="row">
+    @foreach (var @country in Model.TopResults)
+    {
+
+        <div class="col-md-4" style="margin-bottom:20px">
+            <div class="col-md-1">
+                <div class="flag @country.cssClass">
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                @country.Name
+            </div>
+            <div class="col-md-5">
+
+                <a asp-controller="home" asp-action="change" asp-route-region="@country.Name" class="btn btn-default">Change region</a>
+            </div>
+
+        </div>
+
+
+
+    }
+</div>
+
+
+
+
+@foreach (var @i in @Model.Continents)
+{
+    <h4> @i.Name</h4>
+    <div class="row">
+        @foreach (var @country in i.Countries)
+        {
+
+            <div class="col-md-4" style="margin-bottom:20px">
+                <div class="col-md-1">
+                    <div class="flag @country.cssClass">
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    @country.Name
+                </div>
+                <div class="col-md-5">
+
+                    <a asp-controller="home" asp-action="change" asp-route-region="@country.Name" class="btn btn-default">Change region</a>
+                </div>
+
+            </div>
+
+
+
+        }
+    </div>
+
+}
+
